@@ -27,3 +27,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+.gitignore/
+.attach_pid48524
+.attach_pid79110

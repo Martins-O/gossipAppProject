@@ -1,19 +1,9 @@
-package datas.repositories;
+package africa.semicolon.gossip.datas.repositories;
 
-import datas.models.Post;
+import africa.semicolon.gossip.datas.models.Post;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.List;
 
-public interface PostRepository {
-    Post save(Post post);
-
-    Post findById(int id);
-
-    List<Post> findAll();
-
-    long count();
-
-    void delete(Post post);
-
-    void delete(int id);
+public interface PostRepository extends MongoRepository<Post, String> {
+    Post findPostById(String postId);
 }

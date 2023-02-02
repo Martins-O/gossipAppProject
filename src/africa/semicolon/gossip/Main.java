@@ -1,20 +1,25 @@
-import controllers.PostController;
-import dtos.requests.CreatePostRequests;
+package africa.semicolon.gossip;
+
+import africa.semicolon.gossip.controllers.PostController;
+import africa.semicolon.gossip.dtos.requests.CreatePostRequests;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 import javax.swing.*;
-import java.util.Scanner;
 
 @SpringBootApplication
+@EnableMongoRepositories
 public class Main {
 
-    private  static Scanner keyBoard = new Scanner(System.in);
-    private static PostController postController = new PostController();
+    private final PostController postController = new PostController();
 
     public static void main(String[] args) {
-        displayMainMenu();
+        SpringApplication.run(Main.class, args);
+//        displayMainMenu();
     }
 
-    private static void displayMainMenu() {
+    private void displayMainMenu() {
         String mainMenu = """
                 press 1 for create post
                 press 2 for view post
@@ -28,7 +33,7 @@ public class Main {
         }
     }
 
-    private static void createPost() {
+    private void createPost() {
         String title = input("Enter post Title");
         String body = input("Enter post body");
         CreatePostRequests request = new CreatePostRequests();
@@ -38,10 +43,10 @@ public class Main {
         displayMainMenu();
     }
 
-    private static void viewPost() {
+    private void viewPost() {
         String userInput = input("enter post id");
         print(postController
-                .viewPost(Integer.parseInt(String.valueOf(userInput)))
+                .viewPost(String.valueOf(Integer.parseInt(String.valueOf(userInput))))
                 .toString());
         displayMainMenu();
     }
