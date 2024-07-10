@@ -1,0 +1,129 @@
+repo_name: Martins-O/gossipAppProject
+report_id: cd25b195d5514c4a0c33ddf6b9aa5234
+version: 0.1
+repo_type: Public
+timestamp: '2024-07-10T15:19:03+00:00'
+requested_by: Martins-O
+provider: github
+branch: main
+detected_tools_count: 8
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/Martins-O/gossipAppProject
+  detection_source: Repo Metadata
+- name: MongoDB
+  description: The database for giant ideas
+  website_url: http://www.mongodb.com/
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1030/leaf-360x360.png
+  detection_source_url: https://github.com/Martins-O/gossipAppProject/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Martins-O
+  last_updated_on: 2023-02-02 16:16:29.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Martins-O/gossipAppProject
+  detection_source: Repo Metadata
+- name: org.springframework:spring-web
+  description: Spring Web
+  version: 6.0.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/Martins-O/gossipAppProject/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Martins-O
+  last_updated_on: 2023-02-02 16:16:29.000000000 Z
+  vulnerabilities:
+  - name: Spring Framework URL Parsing with Host Validation Vulnerability
+    cve_id: CVE-2024-22259
+    cve_url: https://github.com/advisories/GHSA-hgjh-9rj2-g67j
+    detected_date: Mar 19
+    severity: high
+    first_patched: 6.0.18
+  - name: Spring Web vulnerable to Open Redirect or Server Side Request Forgery
+    cve_id: CVE-2024-22243
+    cve_url: https://github.com/advisories/GHSA-ccgv-vj62-xf9h
+    detected_date: Feb 25
+    severity: high
+    first_patched: 6.0.17
+  - name: Spring Framework URL Parsing with Host Validation
+    cve_id: CVE-2024-22262
+    cve_url: https://github.com/advisories/GHSA-2wrp-6fg6-hmc5
+    detected_date: Apr 26
+    severity: high
+    first_patched: 6.0.19
+- name: org.junit.jupiter:junit-jupiter
+  description: Module "junit-jupiter" of JUnit 5
+  version: 5.9.0
+  license: EPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/Martins-O/gossipAppProject/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Martins-O
+  last_updated_on: 2023-02-02 16:16:29.000000000 Z
+- name: org.projectlombok:lombok
+  description: 'Spice up your java: Automatic Resource Management'
+  version: 1.18.24
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/Martins-O/gossipAppProject/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Martins-O
+  last_updated_on: 2023-02-02 16:16:29.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-data-mongodb
+  description: Starter for using MongoDB document-oriented database and Spring Data
+    MongoDB
+  version: 3.0.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/Martins-O/gossipAppProject/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Martins-O
+  last_updated_on: 2023-02-02 16:16:29.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-web
+  description: Starter for building web, including RESTful, applications using Spring
+    MVC
+  version: 3.0.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/Martins-O/gossipAppProject/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Martins-O
+  last_updated_on: 2023-02-02 16:16:29.000000000 Z
